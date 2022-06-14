@@ -93,7 +93,7 @@ function Todo() {
         </div>
 
         <div className="input-data">
-        <div  >
+        <div style={{backgroundColor:'rgb(24, 22, 22)'}}>
             <input
               type="text"
               placeholder="Enter a Day Work"
@@ -101,9 +101,6 @@ function Todo() {
               onChange={(e) => setInputData(e.target.value)}
               ref={inputRef}
             />
-            <input 
-            type="text"
-            placeholder="Enter a Description"></input>
           </div>
           {
             <button title="Add Iteam" onClick={addItems}> {toggle ? "Add-This-Item" : "Update-This-Item "}  </button>
